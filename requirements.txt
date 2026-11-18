@@ -1,0 +1,3 @@
+# Optioneel voor PE-hardening en ROP/JOP-analyse
+pefile
+ropper

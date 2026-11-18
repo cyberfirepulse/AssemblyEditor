@@ -1,0 +1,8 @@
+Assembly Editor 5.5.7
+Alle rechten voorbehouden.
+
+Dit project wordt aangeboden onder eigen gebruiksvoorwaarden.
+Er wordt geen opensourcelicentie verleend. Neem contact op met de rechthebbende
+voor toestemming tot gebruik, wijziging of verdere verspreiding.
+
+Externe hulpmiddelen en bibliotheken behouden hun eigen licenties.
