@@ -31,7 +31,7 @@ class ExampleProgram:
     focus_lines: Dict[int, str]
     input_hint: str = ''
     demo_inputs: List[str] = field(default_factory=list)
-VERSION = '5.5.8'
+VERSION = '5.5.9'
 
 class AssemblyEditorV555(tk.Tk):
     version = VERSION

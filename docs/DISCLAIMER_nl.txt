@@ -1,0 +1,11 @@
+﻿DISCLAIMER - ASSEMBLY EDITOR
+
+Copyright (c) 2026 CyberFirePulse. Alle rechten voorbehouden.
+
+7. Gebruik. Gebruik de beveiligingsfunctionaliteit alleen op systemen en netwerken waarvoor u toestemming hebt. U bent zelf verantwoordelijk voor de programma's die u maakt en voor het gebruik ervan.
+
+8. Garantie en aansprakelijkheid. De software wordt geleverd "zoals hij is", zonder garantie. CyberFirePulse is niet aansprakelijk voor schade door het gebruik van de software, voor zover de wet dat toestaat.
+
+9. Onderdelen van derden. Python, Tkinter en de overige meegeleverde onderdelen vallen onder hun eigen licentie.
+
+Contact: cyberfirepulse@gmail.com

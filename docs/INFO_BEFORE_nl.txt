@@ -1,0 +1,9 @@
+﻿ASSEMBLY EDITOR 5.5.9 - VOOR DE INSTALLATIE
+
+U kiest zelf: alleen voor mij of voor alle gebruikers. Voor alle gebruikers zijn beheerdersrechten nodig. De installatiemap en Startmenu-map kunt u wijzigen. Een bureaubladsnelkoppeling en starten na installatie zijn optioneel.
+
+De editor bevat de Python-runtime. NASM, een passende 64-bits GCC-toolchain, objdump en optioneel ropper/checksec installeert u afzonderlijk. Deze installer installeert deze externe hulpmiddelen niet en voert geen assemblycode uit.
+
+Instellingen staan per gebruiker in %APPDATA%\AssemblyEditor. Eigen bronbestanden worden opgeslagen waar u zelf kiest. De updatecontrole maakt alleen op verzoek verbinding met GitHub.
+
+Lees en accepteer de gebruiksvoorwaarden en disclaimer op de volgende pagina om door te gaan.

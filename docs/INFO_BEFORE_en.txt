@@ -1,0 +1,9 @@
+﻿ASSEMBLY EDITOR 5.5.9 - BEFORE INSTALLATION
+
+Choose installation for yourself only or for all users. Installation for all users requires administrator privileges. You can change the destination and Start Menu folders. A desktop shortcut and launching after setup are optional.
+
+The editor includes the Python runtime. Install NASM, a matching 64-bit GCC toolchain, objdump and optionally ropper/checksec separately. This installer does not install those external tools or execute assembly source.
+
+Settings are stored per user in %APPDATA%\AssemblyEditor. You choose where to save your source files. Update checks connect to GitHub only on request.
+
+Read and accept the usage terms and disclaimer on the next page to continue.

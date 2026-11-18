@@ -1,8 +1,33 @@
-Assembly Editor 5.5.8
-Alle rechten voorbehouden.
+ASSEMBLY EDITOR - GEBRUIKSVOORWAARDEN
 
-Dit project wordt aangeboden onder eigen gebruiksvoorwaarden.
-Er wordt geen opensourcelicentie verleend. Neem contact op met de rechthebbende
-voor toestemming tot gebruik, wijziging of verdere verspreiding.
+Dit project wordt aangeboden onder eigen gebruiksvoorwaarden. Er wordt geen opensourcelicentie verleend. Neem contact op met de rechthebbende voor toestemming tot gebruik, wijziging of verdere verspreiding.
 
-Externe hulpmiddelen en bibliotheken behouden hun eigen licenties.
+Door dit programma te installeren of te gebruiken, gaat u akkoord met deze voorwaarden. Gaat u niet akkoord, annuleer dan de installatie.
+
+Copyright (c) 2026 CyberFirePulse. Alle rechten voorbehouden.
+
+7. Gebruik. Gebruik de beveiligingsfunctionaliteit alleen op systemen en netwerken waarvoor u toestemming hebt. U bent zelf verantwoordelijk voor de programma's die u maakt en voor het gebruik ervan.
+
+8. Garantie en aansprakelijkheid. De software wordt geleverd "zoals hij is", zonder garantie. CyberFirePulse is niet aansprakelijk voor schade door het gebruik van de software, voor zover de wet dat toestaat.
+
+9. Onderdelen van derden. Python, Tkinter en de overige meegeleverde onderdelen vallen onder hun eigen licentie.
+
+Contact: cyberfirepulse@gmail.com
+
+--- ENGLISH ---
+
+ASSEMBLY EDITOR - USAGE TERMS
+
+This project is provided under proprietary usage terms. No open-source license is granted. Contact the rights holder for permission to use, modify or redistribute the software.
+
+By installing or using this program, you agree to these terms. If you do not agree, cancel the installation.
+
+Copyright (c) 2026 CyberFirePulse. All rights reserved.
+
+7. Use. Only use security functionality on systems and networks you are authorised to use. You are responsible for the programs you create and for how they are used.
+
+8. Warranty and liability. The software is provided "as is", without warranty. CyberFirePulse is not liable for damage caused by the use of the software, as far as the law allows.
+
+9. Third-party components. Python, Tkinter and the other included components are covered by their own licenses.
+
+Contact: cyberfirepulse@gmail.com

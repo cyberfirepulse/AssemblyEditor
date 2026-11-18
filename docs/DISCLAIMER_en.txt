@@ -1,0 +1,11 @@
+﻿DISCLAIMER - ASSEMBLY EDITOR
+
+Copyright (c) 2026 CyberFirePulse. All rights reserved.
+
+7. Use. Only use security functionality on systems and networks you are authorised to use. You are responsible for the programs you create and for how they are used.
+
+8. Warranty and liability. The software is provided "as is", without warranty. CyberFirePulse is not liable for damage caused by the use of the software, as far as the law allows.
+
+9. Third-party components. Python, Tkinter and the other included components are covered by their own licenses.
+
+Contact: cyberfirepulse@gmail.com

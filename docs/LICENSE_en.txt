@@ -1,0 +1,15 @@
+﻿ASSEMBLY EDITOR - USAGE TERMS
+
+This project is provided under proprietary usage terms. No open-source license is granted. Contact the rights holder for permission to use, modify or redistribute the software.
+
+By installing or using this program, you agree to these terms. If you do not agree, cancel the installation.
+
+Copyright (c) 2026 CyberFirePulse. All rights reserved.
+
+7. Use. Only use security functionality on systems and networks you are authorised to use. You are responsible for the programs you create and for how they are used.
+
+8. Warranty and liability. The software is provided "as is", without warranty. CyberFirePulse is not liable for damage caused by the use of the software, as far as the law allows.
+
+9. Third-party components. Python, Tkinter and the other included components are covered by their own licenses.
+
+Contact: cyberfirepulse@gmail.com
