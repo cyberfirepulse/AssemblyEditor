@@ -1,24 +1,21 @@
-# Assembly Editor 5.5.7
+# Assembly Editor 5.5.8
 
-- CyberFirePulse-setupicoon en bestaande wizardafbeeldingen toegevoegd.
-- Eigen ASM-chipicoon toegevoegd aan de Windows-app, vensters en snelkoppelingen.
-- Optionele bureaubladsnelkoppeling en Nederlandse/Engelse installer toegevoegd.
+## Nederlands
+- Nederlands/Engels via het taalmenu, met opgeslagen voorkeur en behoud van code en ongedaan-maakgeschiedenis.
+- Volledige ingebouwde handleiding (F1), met acht onderwerpen en praktische stappen voor installatie, bouwen, uitvoeren en analyse.
+- Apart Over-venster met versie, CyberFirePulse en gebruiksvoorwaarden.
+- Controleren op updates via GitHub, downloaden na toestemming, SHA-256-controle en afzonderlijke bevestiging voor het starten van de installer.
+- CyberFirePulse-installervormgeving en ASM-appicoon behouden.
 
-- Vraagt om opslaan voordat Nieuw, Openen, voorbeeld laden of Afsluiten de code vervangt.
-- Opslaan gebruikt een tijdelijk bestand. Annuleren en opslagfouten behouden het document.
-- Een mislukte build wist de vorige uitvoerselectie.
-- Run bouwt opnieuw als bron of doelplatform gewijzigd is.
-- Build en ROP/JOP werken op de achtergrond met time-outs voor externe opdrachten.
-- Venstertitel en Help noemen 5.5.7.
-- Hulpmiddelen worden automatisch gevonden, persoonlijke instellingen worden per gebruiker opgeslagen.
-- Broncodebundel, installatiehandleiding, afhankelijkhedenlijst en Windows-installer toegevoegd.
-- Eigen gebruiksvoorwaarden met alle rechten voorbehouden, zoals gekozen voor deze release.
+Validatie: echte Windows-consolebuild en uitvoering; bescherming bij buildfouten; taalwisseling, voorkeur opslaan en herstel; behoud van bron en undo; Help/Over in beide talen; updateversievergelijking, downloadbroncontrole en weigeren van afwijkende SHA-256 getest.
+Linux en de volledige live ROP/JOP-workflow zijn nog niet end-to-end gevalideerd. De didactische gadgetscore is geen kwetsbaarheidsscore; de hex-preview toont beginbytes, geen exacte gadgetoffset.
 
-## Validatie
+## English
+- Dutch/English language menu with a saved preference, preserving source and undo history.
+- Complete built-in guide (F1) with eight topics covering setup, builds, execution and analysis.
+- Separate About window showing version, CyberFirePulse and usage terms.
+- GitHub update checks, user-approved downloads, SHA-256 verification and a separate prompt before starting the installer.
+- Existing CyberFirePulse installer branding and dedicated ASM icon retained.
 
-Windows-consolebuild en uitvoering geslaagd met correcte voorbeeldtekst.
-Windows-GUI-build geslaagd. Documentannulering, opslaan, instellingen,
-buildfouten, achtergrondtaken, time-outafhandeling en PE-hardening gecontroleerd.
-De verpakte Windows-app bleef bij de opstartcontrole actief.
-De overdracht van ROP/JOP-resultaten is met gesimuleerde analyse getest.
-Linux, een volledige live ROP/JOP-scan en de installerinstallatie zijn nog niet getest.
+Validation: actual Windows console build and execution; failed-build protection; language switching and preference persistence; source/undo preservation; Help/About in both languages; updater version comparison, download-source validation and SHA-256 mismatch rejection.
+Linux and the complete live ROP/JOP workflow have not been validated end to end. The learning gadget score is not a vulnerability score; hex preview shows the first bytes rather than an exact gadget offset.

@@ -1,4 +1,4 @@
-Assembly Editor 5.5.7
+Assembly Editor 5.5.8
 Alle rechten voorbehouden.
 
 Dit project wordt aangeboden onder eigen gebruiksvoorwaarden.

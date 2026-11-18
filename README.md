@@ -1,69 +1,41 @@
-# Assembly Editor 5.5.7
+# Assembly Editor
 
-Test release / testversie by CyberFirePulse. All rights reserved; see LICENSE.txt.
+Assembly Editor 5.5.8 by CyberFirePulse. Windows x64 assembly editor with NASM/GCC builds, educational support, disassembly and optional ROP/JOP analysis.
 
-[Download Windows installer / Windows-installer downloaden](https://github.com/cyberfirepulse/AssemblyEditor/releases/tag/v5.5.7)
+[Download Windows installer](https://github.com/cyberfirepulse/AssemblyEditor/releases/latest) · [Releases](https://github.com/cyberfirepulse/AssemblyEditor/releases)
 
 ## English
 
-Windows assembly editor with NASM/GCC builds, disassembly and optional ROP/JOP analysis. Includes save-before-replace prompts, protection against running stale builds, background builds with timeouts, automatic tool discovery, CyberFirePulse installer branding and a dedicated ASM application icon.
+Install the Setup executable. It includes the Python runtime and pefile. Install NASM and a 64-bit GCC toolchain separately (for example MSYS2 UCRT64). Select the executable paths under Tools > Dependency settings. objdump provides disassembly; the external ropper command provides gadget analysis; checksec provides ELF hardening checks.
 
-Install using the Setup executable. NASM and a 64-bit GCC toolchain (for example MSYS2) must be installed separately. Configure paths under Tools > Dependency settings. ROP/JOP requires the external ropper command; ELF hardening requires checksec. For source use, install Python 3.10+ with Tkinter and requirements.txt, then run assembly_editor.py.
+Choose Language > English or Nederlands; the preference is saved per user. Press F1 for the full built-in guide: quick start, tool installation, files, builds and execution, troubleshooting, disassembly, ROP/JOP and settings. Version and licensing are under Help > About Assembly Editor.
 
-Windows console build and execution, GUI build, save/cancel behavior and build failure handling were checked. Linux, a complete live ROP/JOP scan and installer installation have not yet been tested. This release is intended for testing and further improvement.
+Load 01_windows_hello.asm from Project, select windows_x64, choose Make > Build (auto), then Run. Source and original tool output are not translated. The bundled examples target Windows x64.
+
+Help > Check for updates checks this repository for a newer regular release. Downloads require approval and are checked against the release SHA-256 file. Starting the installer requires a second confirmation. No automatic installation takes place.
+
+For source use: Python 3.10+ with Tkinter, then python -m pip install -r requirements.txt and python assembly_editor.py. Keep all Python modules together. Run build.ps1 with PyInstaller and Inno Setup 6 installed to build the Windows installer.
+
+Settings are stored in %APPDATA%/AssemblyEditor/settings.json (fallback: ~/.config/AssemblyEditor). New/Open/example loading/Exit protect unsaved work. Failed builds clear the previous executable selection. Background builds and analysis use timeouts.
+
+See RELEASE_NOTES.md for validation and current limitations. Linux and complete live ROP/JOP analysis are not yet validated end to end. The gadget score is educational, not a vulnerability rating; the hex preview shows the beginning of the binary, not an exact gadget offset.
 
 ## Nederlands
 
-# Assembly Editor 5.5.7
+Installeer het Setup-bestand. De Python-runtime en pefile zijn inbegrepen. Installeer NASM en een 64-bits GCC-toolchain afzonderlijk (bijvoorbeeld MSYS2 UCRT64). Kies de uitvoerbestanden bij Hulpmiddelen > Instellingen hulpmiddelen. objdump verzorgt disassembly, het externe commando ropper gadgetanalyse en checksec ELF-hardening.
 
-## Starten op Windows
+Kies Taal > Nederlands of English; de voorkeur wordt per gebruiker onthouden. F1 opent de volledige handleiding: snel starten, installatie, bestanden, bouwen en uitvoeren, foutmeldingen, disassembly, ROP/JOP en instellingen. Versie en gebruiksvoorwaarden staan bij Help > Over Assembly Editor.
 
-Gebruik de Setup-installer en start Assembly Editor vanuit het Startmenu.
-Voor broncodegebruik is Python 3.10 of nieuwer met Tkinter vereist.
-Start met python assembly_editor.py.
+Laad 01_windows_hello.asm via Project, kies windows_x64, vervolgens Bouwmenu > Bouwen (automatisch), en Uitvoeren. Broncode en oorspronkelijke tooluitvoer worden niet vertaald. De meegeleverde voorbeelden zijn voor Windows x64.
 
-## Hulpmiddelen
+Help > Controleren op updates zoekt een nieuwere reguliere GitHub-release. Downloaden gebeurt na toestemming en de installer wordt met SHA-256 gecontroleerd. Voor starten van de installer volgt een aparte bevestiging. Er wordt niet automatisch geïnstalleerd.
 
-Bouwen vereist NASM en een 64-bits GCC-toolchain. De tool zoekt in PATH en in
-gebruikelijke Windows-installatiemappen voor NASM en MSYS2 UCRT64/MINGW64.
-Installeer NASM vanaf nasm.us en een passende GCC-toolchain, bijvoorbeeld MSYS2.
-Kies ontbrekende of afwijkende paden via Tools > Dependency settings.
-Disassembly gebruikt objdump uit dezelfde toolchain.
-ROP/JOP-analyse gebruikt het commando ropper en PE-hardening gebruikt pefile.
-Voor broncodegebruik: python -m pip install -r requirements.txt.
-Voor een installerinstallatie moet ropper als extern commando beschikbaar zijn.
-De installer bundelt pefile voor PE-hardening. ELF-hardening gebruikt checksec.
+Voor broncodegebruik: Python 3.10+ met Tkinter, daarna python -m pip install -r requirements.txt en python assembly_editor.py. Houd alle Python-modules bij elkaar. Bouw de Windows-installer met build.ps1, PyInstaller en Inno Setup 6.
 
-## Werkwijze
+Instellingen staan in %APPDATA%/AssemblyEditor/settings.json (terugval: ~/.config/AssemblyEditor). Nieuw/Openen/voorbeeld laden/Afsluiten beschermen onopgeslagen werk. Mislukte builds wissen de vorige uitvoerselectie. Achtergrondtaken hebben time-outs.
 
-Laad een voorbeeld, bouw via Make > Build en start via Make > Run.
-Wijzigingen worden gecontroleerd bij Nieuw, Openen, voorbeeld laden en Afsluiten.
-Bij Ja sla je op, bij Nee vervang je de code en bij Annuleren blijf je in het document.
-Run bouwt gewijzigde code opnieuw. Een mislukte build geeft geen vorige binary vrij.
-Tijdens een build kun je blijven typen. Bouw opnieuw als de bron ondertussen verandert.
-Build en ROP/JOP draaien op de achtergrond. NASM/GCC hebben elk 30 seconden,
-checksec 30 seconden en ropper 60 seconden. Een time-out verschijnt in de console.
+Zie RELEASE_NOTES.md voor controles en beperkingen. Linux en volledige live ROP/JOP-analyse zijn nog niet end-to-end gevalideerd. De gadgetscore is didactisch; de hex-preview toont beginbytes, geen exacte gadgetoffset.
 
-Instellingen staan in de gebruikersconfiguratiemap AssemblyEditor/settings.json.
-De release bevat geen persoonlijke instellingen of vooraf ingevulde absolute paden.
+## License / gebruiksvoorwaarden
 
-## Bouwen van de installer
-
-Installeer PyInstaller. Bouw met:
-python -m PyInstaller --noconfirm --windowed --onedir --name AssemblyEditor --hidden-import pefile --icon assets/assembly-editor.ico --add-data "assets;assets" assembly_editor.py
-Compileer daarna AssemblyEditor.iss met Inno Setup 6.
-Alle vier Python-bestanden moeten in dezelfde bronmap blijven.
-
-## Controle van deze release
-
-Op Windows zijn documentannulering, opslaan, instellingen, een echte consolebuild
-met correcte uitvoer, een GUI-build, fouten bij bouwen, achtergrondtaken en time-outs
-gecontroleerd. De Linux-bouwketen en het openen van de GUI-voorbeeldbinary zijn niet
-getest. De volledige ROP/JOP-uitvoer is afhankelijk van de externe tools.
-
-## Gebruiksvoorwaarden
-
-Eigen gebruiksvoorwaarden, alle rechten voorbehouden. Zie LICENSE.txt.
-
-De Windows-installer gebruikt de bestaande CyberFirePulse-wizardafbeeldingen en het CyberFirePulse-setupicoon. De app en snelkoppelingen gebruiken het ASM-chipicoon. Bouw beide via build.ps1.
-
+All rights reserved / alle rechten voorbehouden. Proprietary usage terms; see LICENSE.txt. Third-party components retain their own licenses.
